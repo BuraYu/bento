@@ -13,6 +13,7 @@ img {
 body {
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
+  background-color: rgb(243, 243, 243);
 }
 
 :root {
@@ -95,15 +96,52 @@ body {
 
 .div3 {
   grid-area: 1 / 2 / 5 / 4;
-  background-color: #49082c;
+  max-width: 544px;
+  border-radius: 10px;
+  display: flex;
+  background-color: var(--purple500);
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  padding: 62px 32px;
 }
+
+.div3 h1 {
+  text-align: center;
+}
+
+.div3 span:first-child {
+  color: var(--yellow500);
+}
+
+.div3 span:nth-child(2) {
+  font-style: italic;
+}
+
 .div4 {
   grid-area: 5 / 2 / 8 / 3;
-  background-color: #578b11;
+  background-color: var(--white);
+  padding: 24px;
+  max-width: 247px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.div4 h3 {
+  margin-top: 20px;
 }
 .div5 {
   grid-area: 5 / 3 / 8 / 4;
-  background-color: #df4a0f;
+  background-color: var(--yellow500);
+  padding: 24px;
+  max-height: 247px;
+  max-width: 247px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.div5 img {
+  margin-top: 16px;
 }
 .div6 {
   grid-area: 1 / 4 / 8 / 5;
