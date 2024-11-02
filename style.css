@@ -34,7 +34,6 @@ body {
   font-size: 2.5rem;
   line-height: 90%;
   letter-spacing: -0.125rem;
-  font-weight: 500;
 }
 .text-preset-3 {
   font-size: 2rem;
@@ -51,6 +50,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .parent {
@@ -97,6 +97,7 @@ body {
 .div3 {
   grid-area: 1 / 2 / 5 / 4;
   max-width: 544px;
+  height: 100%;
   border-radius: 10px;
   display: flex;
   background-color: var(--purple500);
@@ -145,13 +146,63 @@ body {
 }
 .div6 {
   grid-area: 1 / 4 / 8 / 5;
-  background-color: #2e2d31;
+  background-color: var(--purple100);
+  max-width: 256px;
+  height: 100%;
+  padding: 50px 32px;
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+.div6 img {
+  width: 357px;
+  height: 318px;
+  max-width: none;
+  max-height: none;
+  margin-top: 24px;
+}
+
+.div6 p {
+  margin-top: 24px;
+}
+
 .div7 {
   grid-area: 8 / 2 / 11 / 3;
-  background-color: #6d581e;
+  background-color: var(--white);
+  max-width: 256px;
+  height: 100%;
+  padding: 24px;
+  border-radius: 10px;
 }
+
+.div7 span:first-child {
+  display: block;
+  margin-bottom: 15px;
+}
+.div7 img {
+  width: 150px;
+  height: auto;
+  margin-top: 38px;
+}
+
 .div8 {
   grid-area: 8 / 3 / 11 / 5;
-  background-color: #a386f1;
+  background-color: var(--purple500);
+  max-width: 544px;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.div8 img {
+  height: 200px;
+  width: 227px;
+}
+
+.div8 h2 {
+  font-weight: 500;
 }
